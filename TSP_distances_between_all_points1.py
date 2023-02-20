@@ -19,19 +19,3 @@ distances = calculate_distances(coordinates)
 print(distances)
 
 
-# from itertools import permutations
-
-
-# def traveling_salesman(cities, coordinates):
-#     n = len(cities)
-#     best_route = None
-#     shortest_distance = float('inf')
-#     for route in permutations(range(n)):
-#         route_distance = sum(distances[route[i]][route[i+1]] for i in range(n-1)) + distances[route[n-1]][route[0]]
-#         if route_distance < shortest_distance:
-#             best_route = [cities[i] for i in route]
-#             shortest_distance = route_distance
-#     return best_route, shortest_distance
-
-
-# print(traveling_salesman(cities, coordinates))
